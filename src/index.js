@@ -11,7 +11,7 @@ const defaults = {
 
 const widthMap = {
   auto: 'initial',
-  thin: '0.5rem',
+  thin: '7px',
   none: '0',
 };
 
