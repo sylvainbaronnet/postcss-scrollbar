@@ -11,7 +11,7 @@ const defaults = {
 
 const widthMap = {
   auto: 'initial',
-  thin: '0.5rem',
+  thin: '7px',
   none: '0',
 };
 
@@ -20,8 +20,7 @@ const colorMap = {
   dark: 'initial',
   light: 'initial',
 };
-
-export default postcss.plugin(name, (options = defaults) => (css, result) => {
+export default (name, (options = defaults) => (css, result) => {
   css.walkDecls(/^scrollbar/, decl => {
     if (decl.prop === 'scrollbar-width') {
       return processWidth(decl);
@@ -159,3 +158,5 @@ function isInvalidColor(nodes) {
     !/auto|dark|light/.test(nodes[0].value)
   );
 }
+
+module.exports.postcss = true
