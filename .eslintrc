@@ -27,6 +27,7 @@ rules:
       exports: "always-multiline"
       functions: ignore
 
+  jest/valid-title: off
   no-unused-expressions: off
   babel/no-unused-expressions: error
 
