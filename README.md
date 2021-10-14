@@ -6,8 +6,8 @@
 
 > [PostCSS] plugin enabling custom scrollbars
 
-Spec : https://drafts.csswg.org/css-scrollbars-1  
-Browser support: https://caniuse.com/#feat=css-scrollbar  
+Spec : https://drafts.csswg.org/css-scrollbars-1
+Browser support: https://caniuse.com/#feat=css-scrollbar
 Docs: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scrollbars
 
 ## Installation
@@ -61,8 +61,8 @@ postcss()
   background-color: green;
 }
 .scrollable::-webkit-scrollbar {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 7px;
+  height: 7px;
 }
 .scrollable {
   -ms-overflow-style: auto;
@@ -94,11 +94,11 @@ postcss()
 
 ### `edgeAutohide`
 
-type: `Boolean`  
-default: `false`  
-Allows for setting the scrollbar behaviour for the Edge Browser.  
-`-ms-overflow-style: -ms-autohiding-scrollbar;`  
-Edge doesn't support scrollbar styling.  
+type: `Boolean`
+default: `false`
+Allows for setting the scrollbar behaviour for the Edge Browser.
+`-ms-overflow-style: -ms-autohiding-scrollbar;`
+Edge doesn't support scrollbar styling.
 See https://developer.mozilla.org/fr/docs/Web/CSS/-ms-overflow-style
 
 ## Credits
